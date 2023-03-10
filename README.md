@@ -1,6 +1,10 @@
-# dihlofos-vue-template
 
-This template should help get you started developing with Vue 3 in Vite.
+
+
+# Snowmoscow-vue
+
+
+Test site with new custom headless cms.
 
 ## Recommended IDE Setup
 
