@@ -6,7 +6,7 @@ import { computed } from 'vue';
 
 const mainStore = useMainStore();
 
-const section = computed((): ISection<IAboutContent> => mainStore.getSectionByName('about'));
+const section = computed((): ISection<IAboutContent> => mainStore.getSectionByName('about') as ISection<IAboutContent>);
 </script>
 
 <template>
@@ -19,7 +19,7 @@ const section = computed((): ISection<IAboutContent> => mainStore.getSectionByNa
 			<div class="about__content">
 				<img
 					class="about__image"
-					src="img/about-image.jpg"
+					src="/img/about-image.jpg"
 					alt="ледяная скульптура саамов"
 					width="680"
 					height="512"

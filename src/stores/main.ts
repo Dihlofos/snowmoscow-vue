@@ -44,6 +44,7 @@ const useMainStore = defineStore({
 		async fetchSiteData() {
 			try {
 				this.loading = true;
+				// @ts-ignore
 				this.siteData = await this.apiService.mainApi.getSiteData();
 			} catch (e: unknown) {
 				console.error('siteData loading error', e);
@@ -51,7 +52,7 @@ const useMainStore = defineStore({
 				this.loading = false;
 			}
 		},
-		getSectionByName(sectionName: string): ISection | undefined {
+		getSectionByName(sectionName: string): ISection<any> | undefined {
 			return this.siteData?.pageList[this.activePage]?.sections.find(({ name }) => name === sectionName);
 		},
 	},

@@ -14,7 +14,7 @@ export interface IPage {
 	pathName: string;
 	helmet: IPageHelmet;
 	nav: INav;
-	sections: ISection[];
+	sections: ISection<any>[];
 }
 
 export interface IPageHelmet {

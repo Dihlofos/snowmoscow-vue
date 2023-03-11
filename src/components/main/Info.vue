@@ -6,7 +6,7 @@ import { computed } from 'vue';
 
 const mainStore = useMainStore();
 
-const section = computed((): ISection<IAdContent> => mainStore.getSectionByName('ad'));
+const section = computed((): ISection<IAdContent> => mainStore.getSectionByName('ad') as ISection<IAdContent>);
 </script>
 
 <template>
@@ -16,21 +16,21 @@ const section = computed((): ISection<IAdContent> => mainStore.getSectionByName(
 	>
 		<div class="container">
 			<img
-				src="img/info-blue-right-top.svg"
+				src="/img/info-blue-right-top.svg"
 				class="info__ornament info__ornament--blue-right-top js-blue-right-top"
 				width="224"
 				height="221"
 				alt="орнамент"
 			/>
 			<img
-				src="img/info-blue-right-bottom.svg"
+				src="/img/info-blue-right-bottom.svg"
 				class="info__ornament info__ornament--blue-right-bottom js-blue-right-bottom"
 				width="575"
 				height="507"
 				alt="орнамент"
 			/>
 			<img
-				src="img/info-blue-left-bottom.svg"
+				src="/img/info-blue-left-bottom.svg"
 				class="info__ornament info__ornament--blue-left-bottom js-blue-left-bottom"
 				width="418"
 				height="463"
@@ -38,21 +38,21 @@ const section = computed((): ISection<IAdContent> => mainStore.getSectionByName(
 			/>
 
 			<img
-				src="img/info-color-bottom.svg"
+				src="/img/info-color-bottom.svg"
 				class="info__ornament info__ornament--color-bottom js-color-bottom"
 				width="69"
 				height="68"
 				alt="орнамент"
 			/>
 			<img
-				src="img/info-color-left.svg"
+				src="/img/info-color-left.svg"
 				class="info__ornament info__ornament--color-left js-color-left"
 				width="85"
 				height="55"
 				alt="орнамент"
 			/>
 			<img
-				src="img/info-color-top.svg"
+				src="/img/info-color-top.svg"
 				class="info__ornament info__ornament--color-top js-color-top"
 				width="96"
 				height="90"
@@ -60,7 +60,7 @@ const section = computed((): ISection<IAdContent> => mainStore.getSectionByName(
 			/>
 
 			<img
-				src="img/info-whites.svg"
+				src="/img/info-whites.svg"
 				class="info__ornament info__ornament--whites js-whites"
 				width="208"
 				height="158"
@@ -72,7 +72,7 @@ const section = computed((): ISection<IAdContent> => mainStore.getSectionByName(
 			>
 				<img
 					class="info__snowflake"
-					src="img/info-snowflake.svg"
+					src="/img/info-snowflake.svg"
 					width="51"
 					height="55"
 					alt="снежинка"

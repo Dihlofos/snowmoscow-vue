@@ -24,7 +24,7 @@ const mainStore = useMainStore();
 					<img
 						width="1414"
 						height="306"
-						src="img/logo.svg"
+						src="/img/logo.svg"
 						alt="Снег и лёд в Москве"
 					/>
 				</div>

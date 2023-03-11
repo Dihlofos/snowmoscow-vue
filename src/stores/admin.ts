@@ -59,6 +59,7 @@ const useMainPageStore = defineStore({
 		async uploadData(): Promise<void> {
 			try {
 				this.loading = true;
+				// @ts-ignore
 				this.apiService.mainApi.updateSite(this.formData);
 			} catch (e: unknown) {
 				console.error('pageData loading error', e);

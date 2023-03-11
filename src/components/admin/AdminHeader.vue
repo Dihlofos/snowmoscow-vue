@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import router, { RouteNames } from '@/router';
+import router from '@/router';
 import useAdminStore from '@/stores/admin';
 import UiButton from '@/components/ui/ui-button.vue';
 
 import { computed } from 'vue';
 import IconBack from '@/components/icons/IconBack.vue';
 import useMainStore from '@/stores/main';
+import { RouteNames } from '@/router/routes';
 
 const adminStore = useAdminStore();
 const mainStore = useMainStore();

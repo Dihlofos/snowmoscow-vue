@@ -7,7 +7,7 @@ import { computed } from 'vue';
 
 const mainStore = useMainStore();
 
-const section = computed((): ISection<IHeroContent> => mainStore.getSectionByName('hero'));
+const section = computed((): ISection<IHeroContent> => mainStore.getSectionByName('hero') as ISection<IHeroContent>);
 </script>
 
 <template>
@@ -23,7 +23,7 @@ const section = computed((): ISection<IHeroContent> => mainStore.getSectionByNam
 			</div>
 			<video
 				class="hero__video js-video-video"
-				poster="img/hero-video-image.jpg"
+				poster="/img/hero-video-image.jpg"
 				muted
 				inline
 				autoplay
@@ -33,7 +33,7 @@ const section = computed((): ISection<IHeroContent> => mainStore.getSectionByNam
 				preload="auto"
 			>
 				<source
-					src="video/desktop.mp4"
+					src="/video/desktop.mp4"
 					type="video/mp4"
 				/>
 			</video>

@@ -1,24 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
 
-export enum RouteNames {
-	Home = 'HOME',
-	Admin = 'ADMIN',
-}
+import routes from './routes';
+
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
-	routes: [
-		{
-			path: '/',
-			name: RouteNames.Home,
-			component: Home,
-		},
-		{
-			path: '/admin',
-			name: RouteNames.Admin,
-			component: () => import('@/views/Admin.vue'),
-		},
-	],
+	routes,
 });
 
 export default router;
